@@ -550,11 +550,16 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-  /* gap: 70px; */
+  gap: 30px;
 }
 
-.footer-nav {
-  margin-right: 70px;
+.footer-nav,
+.footer-socials {
+  width: calc(3 / 12 * 100%);
+}
+
+.footer-sub {
+  width: calc(6 / 12 * 100%);
 }
 
 .footer-logo {
@@ -588,10 +593,6 @@ img {
   transition: color var(--anim-main);
 }
 
-.footer-socials {
-  margin-right: 93px;
-}
-
 .socials-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -600,6 +601,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-cl);
+}
+
+.socials-list.footer-socials-list {
+  justify-content: start;
 }
 
 .footer-socials-link {
